@@ -1,0 +1,51 @@
+#main, #content-2-wide .maindetails_center {
+    
+    margin-left: 20px;
+}
+
+.article {
+    border-radius: 12px;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 7px;
+    padding: 10px 12px;
+    width: auto;
+    background-color: #FFFFFF;
+}
+
+.article h1.findHeader {
+    border: none;
+    color: #202020;
+    font-size: 17px;
+    font-weight: normal;
+    padding-bottom: 0;
+}
+
+.findSection {
+    margin-top: 20px;
+}
+
+.findSectionHeader {
+    clear: left;
+    color: #A58500;
+    font-size: 15px;
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+table.findList {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.odd {
+    background-color: #f6f6f5;
+    border: #fff 1px solid;
+}
+
+table.findList td.primary_photo {
+    width: 32px;
+}
+
+table.findList td {
+    padding: 4px 6px 6px 6px;
+}

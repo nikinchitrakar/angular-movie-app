@@ -1,0 +1,23 @@
+<div id="main">
+  <div class="article">
+    <h1 class="findHeader">Results for <span class="findSearchTerm">"{{title}}"</span></h1>
+        
+    <div class="findSection">
+      <h3 class="findSectionHeader"><a name="tt"></a>Titles</h3>
+      <table class="findList">
+        <tbody>
+          <tr class="findResult odd" *ngFor="let movie of movieList">
+            <td class="primary_photo">
+              <a routerLink="/detail/{{movie.imdbID}}"><img src="{{movie.Poster}}" width="32px" height="44px"></a>
+            </td>
+            <td class="result_text">
+                <a routerLink="/detail/{{movie.imdbID}}">{{movie.Title}}</a> ({{movie.Year}}) 
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+        
+    </div>
+  </div>
+</div>

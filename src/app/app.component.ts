@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-movie-app';
+  name = new FormControl('');
+  
+  constructor(private router: Router){  }
+
+  showList(){
+    this.router.navigate(['list',this.name.value]);
+  }
+ 
 }

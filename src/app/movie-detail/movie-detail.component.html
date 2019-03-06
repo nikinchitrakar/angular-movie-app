@@ -1,0 +1,47 @@
+<div class="title_bar_wrapper">
+  <div class="ratings_wrapper">
+    <div class="imdbRating">
+      <div class="ratingValue">
+        <strong ><span>{{movie.imdbRating}}</span></strong>
+        <span class="grey">/</span>
+        <span class="grey" itemprop="bestRating">10</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="titleBar">
+    <div class="title_wrapper">
+      <h1 class="ml-4">{{movie.Title}}&nbsp;<span id="titleYear">({{movie.Year}})</span></h1>
+          <div class="ml-4 subtext">{{movie.Rated}}
+            <span class="ghost">|</span>
+            <time datetime="PT163M">{{movie.Runtime}}</time>
+            <span class="ghost">|</span>
+            {{movie.Genre}}
+            <span class="ghost">|</span>
+            {{movie.Released}} ({{movie.Country}})
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="detail_wrapper mt-5 ml-4">
+  <div class="row">
+    <div class="col-sm-6">
+      <p>{{movie.Plot}}</p>
+      <br>
+      <span>
+        <strong>Director:</strong>  {{movie.Director}}
+      </span><br>
+      <span>
+        <strong>Writer:</strong> {{movie.Writer}}
+      </span><br>
+      <span>
+        <strong>Stars:</strong> {{movie.Actors}}
+      </span><br>
+  
+    </div>
+    <div class="col-sm-6">
+        <img src="{{movie.Poster}}" alt="">
+      </div>
+  </div>
+</div>
