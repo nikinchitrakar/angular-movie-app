@@ -13,6 +13,7 @@ export class AppComponent {
   constructor(private router: Router){  }
 
   showList(){
+    console.log("submit event called");
     this.router.navigate(['list',this.name.value]);
   }
  

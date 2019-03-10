@@ -8,7 +8,7 @@
         <tbody>
           <tr class="findResult odd" *ngFor="let movie of movieList">
             <td class="primary_photo">
-              <a routerLink="/detail/{{movie.imdbID}}"><img src="{{movie.Poster}}" width="32px" height="44px"></a>
+              <a routerLink="/detail/{{movie.imdbID}}"><img [src]="getPoster(movie.Poster)" width="32px" height="44px"></a>
             </td>
             <td class="result_text">
                 <a routerLink="/detail/{{movie.imdbID}}">{{movie.Title}}</a> ({{movie.Year}}) 

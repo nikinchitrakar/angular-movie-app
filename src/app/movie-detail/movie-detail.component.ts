@@ -15,16 +15,11 @@ export class MovieDetailComponent implements OnInit {
     private apiService: ApiService
   ) { }
 
-  ngOnInit(): void {
-    this.getMovie();
-  }
-  
-  getMovie(): void {
+  ngOnInit(){
     const id = this.route.snapshot.paramMap.get('id');
     this.apiService.getMovieById(id)
       .subscribe(res => {
         this.movie = res;
       });
-  }  
-
+  }
 }
